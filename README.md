@@ -132,4 +132,4 @@ bun run build
 
 ---
 
-**Made with ❤️ by [Your Name]**
+**Made with ❤️ by Artis**
