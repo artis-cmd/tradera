@@ -24,7 +24,7 @@ export default function LoginPage() {
       if (success) {
         toast({
           title: "로그인 성공!",
-          description: "Turn Trader에 오신 것을 환영합니다.",
+          description: "Trader A 에 오신 것을 환영합니다.",
         })
       } else {
         toast({
@@ -60,7 +60,7 @@ export default function LoginPage() {
         <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg mb-2">
           <Image
             src="/logo.png"
-            alt="Turn Trader Logo"
+            alt="Trader ALogo"
             width={50}
             height={50}
             className="object-contain"
@@ -68,7 +68,7 @@ export default function LoginPage() {
         </div>
 
         {/* Title */}
-        <h1 className="text-white text-3xl font-bold tracking-wide mb-4">Turn Trader</h1>
+        <h1 className="text-white text-3xl font-bold tracking-wide mb-4">Trader A</h1>
 
         {/* Login Form */}
         <div className="w-full space-y-4">
@@ -137,7 +137,7 @@ export default function LoginPage() {
       <div className="absolute bottom-4 left-4 right-4 lg:hidden">
         <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 text-center shadow-lg">
           <p className="text-sm text-gray-700 mb-2">
-            Turn Trading is not available on mobile devices. Please use a desktop browser
+            Trader A is not available on mobile devices. Please use a desktop browser
           </p>
         </div>
       </div>

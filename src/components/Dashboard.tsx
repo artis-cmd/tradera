@@ -25,7 +25,7 @@ export default function Dashboard() {
               <div className="w-10 h-10 bg-[#1c4b8b] rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-lg">T</span>
               </div>
-              <h1 className="text-xl font-bold text-gray-900">Turn Trader</h1>
+              <h1 className="text-xl font-bold text-gray-900">Trader A</h1>
             </div>
 
             {/* User Menu */}

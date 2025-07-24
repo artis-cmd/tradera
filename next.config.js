@@ -2,6 +2,8 @@
 const nextConfig = {
   output: 'export',
   distDir: 'out',
+  basePath: '/tradera',
+  assetPrefix: '/tradera/',
   allowedDevOrigins: ["*.preview.same-app.com"],
   images: {
     unoptimized: true,
