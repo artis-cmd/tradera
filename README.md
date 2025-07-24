@@ -2,120 +2,134 @@
 
 Turn Trader의 Study 페이지를 완벽하게 클론한 Next.js 프로젝트입니다.
 
-## 프로젝트 개요
+![Turn Trader Screenshot](https://via.placeholder.com/800x400/1c4b8b/ffffff?text=Turn+Trader+Study+Page)
 
-이 프로젝트는 Turn Trader의 Study 페이지를 Next.js와 TypeScript로 구현한 클론 프로젝트입니다. 실제 웹사이트의 디자인과 기능을 완벽하게 재현했습니다.
+## ✨ 주요 기능
 
-## 주요 기능
+- **🔐 로그인 시스템**: 테스트 계정으로 간편 로그인
+- **📚 5개 학습 카테고리**: Basics, Market, Strategy, Risk, Psychology
+- **🎛️ 사이드바 네비게이션**: HOME, STUDY, TRAINING, SIMULATOR, LIVE
+- **🎨 3D 푸시 버튼 효과**: 원본과 동일한 인터랙티브 버튼
+- **📱 반응형 디자인**: 모든 기기에서 완벽한 UI
+- **🎯 진행률 추적**: 각 카테고리별 학습 진행 상황 표시
 
-- **로그인 시스템**: 테스트 계정 (test@test.com / password)을 통한 인증
-- **5개 학습 카테고리**:
-  - Basics (기초)
-  - Market (시장)
-  - Strategy (전략)
-  - Risk (위험관리)
-  - Psychology (심리)
-- **사이드바 네비게이션**: 직관적인 메뉴 구조
-- **3D 푸시 버튼 효과**: 인터랙티브한 UI 요소
-- **반응형 디자인**: 모바일과 데스크톱 모두 지원
+## 🚀 기술 스택
 
-## 기술 스택
+- **Frontend**: Next.js 15 + TypeScript
+- **스타일링**: Tailwind CSS + shadcn/ui
+- **아이콘**: Lucide React
+- **상태관리**: React Context API
+- **빌드 도구**: Bun
+- **배포**: Netlify
 
-- **Frontend**: Next.js 14, TypeScript, Tailwind CSS
-- **UI Components**: Shadcn/ui
-- **State Management**: React Context API
-- **Build Tool**: Bun
-- **Deployment**: Netlify
+## 📦 설치 및 실행
 
-## 설치 방법
-
-1. 저장소를 클론합니다:
+### 1. 저장소 클론
 ```bash
 git clone https://github.com/artis-cmd/turn-trader-clone.git
 cd turn-trader-clone
 ```
 
-2. 의존성을 설치합니다:
+### 2. 의존성 설치
 ```bash
 bun install
 ```
 
-## 실행 방법
-
-### 개발 서버 실행
+### 3. 개발 서버 실행
 ```bash
-bun dev
+bun run dev
 ```
 
-브라우저에서 [http://localhost:3000](http://localhost:3000)을 열어 애플리케이션을 확인하세요.
+브라우저에서 [http://localhost:3000](http://localhost:3000)을 열어 확인하세요.
 
-### 빌드
+## 🔑 로그인 정보
+
+**테스트 계정 1:**
+- 이메일: `test@test.com`
+- 비밀번호: `password`
+
+**테스트 계정 2:**
+- 이메일: `demo@turntrader.com`
+- 비밀번호: `demo123`
+
+## 📁 프로젝트 구조
+
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── globals.css        # 전역 스타일
+│   ├── layout.tsx         # 루트 레이아웃
+│   └── page.tsx           # 메인 페이지
+├── components/            # React 컴포넌트
+│   ├── ui/               # shadcn/ui 컴포넌트
+│   │   ├── button.tsx
+│   │   ├── input.tsx
+│   │   ├── push-button.tsx  # 커스텀 3D 버튼
+│   │   └── ...
+│   ├── LoginPage.tsx     # 로그인 페이지
+│   └── StudyPage.tsx     # 학습 페이지
+├── contexts/             # React Context
+│   └── AuthContext.tsx   # 인증 컨텍스트
+└── hooks/                # 커스텀 훅
+    └── use-toast.ts
+```
+
+## 🎨 주요 컴포넌트
+
+### StudyPage.tsx
+- 5개 학습 카테고리 카드
+- 진행률 바와 퍼센트 표시
+- 하늘색 그라데이션 배경
+- 금융 아이콘 워터마크
+
+### LoginPage.tsx
+- 3D 푸시 버튼 효과
+- 폼 유효성 검사
+- 토스트 알림
+- 원본과 동일한 디자인
+
+### PushButton.tsx
+- 커스텀 3D 효과
+- Primary/Secondary 변형
+- 호버 및 활성 상태
+
+## 🌐 라이브 데모
+
+**배포된 사이트**: [https://same-jtwb77s9sz9-latest.netlify.app](https://same-jtwb77s9sz9-latest.netlify.app)
+
+## 📋 빌드 및 배포
+
+### 프로덕션 빌드
 ```bash
 bun run build
 ```
 
-### 프로덕션 실행
+### 정적 사이트 내보내기
 ```bash
-bun start
+bun run build
 ```
 
-### 정적 내보내기
-```bash
-bun run export
-```
+### Netlify 배포
+이 프로젝트는 Netlify에 바로 배포할 수 있도록 설정되어 있습니다.
 
-## 로그인 정보
+## 🤝 기여하기
 
-테스트용 로그인 정보:
-- **이메일**: test@test.com
-- **비밀번호**: password
+1. 이 저장소를 포크하세요
+2. 새 기능 브랜치를 만드세요 (`git checkout -b feature/새기능`)
+3. 변경사항을 커밋하세요 (`git commit -am '새 기능 추가'`)
+4. 브랜치에 푸시하세요 (`git push origin feature/새기능`)
+5. Pull Request를 만드세요
 
-## 프로젝트 구조
+## 📄 라이선스
 
-```
-turn-trader-clone/
-├── src/
-│   ├── app/                 # Next.js App Router
-│   │   ├── page.tsx         # 메인 페이지
-│   │   ├── layout.tsx       # 루트 레이아웃
-│   │   ├── globals.css      # 글로벌 스타일
-│   │   └── ClientBody.tsx   # 클라이언트 컴포넌트
-│   ├── components/          # React 컴포넌트
-│   │   ├── ui/              # UI 컴포넌트
-│   │   ├── LoginPage.tsx    # 로그인 페이지
-│   │   ├── Dashboard.tsx    # 대시보드
-│   │   └── StudyPage.tsx    # 학습 페이지
-│   ├── contexts/            # React Context
-│   │   └── AuthContext.tsx  # 인증 컨텍스트
-│   ├── hooks/               # 커스텀 훅
-│   └── lib/                 # 유틸리티 함수
-├── public/                  # 정적 파일
-├── package.json
-├── next.config.js
-├── tailwind.config.ts
-└── tsconfig.json
-```
+이 프로젝트는 MIT 라이선스 하에 있습니다.
 
-## 주요 컴포넌트
+## 🙏 감사의 말
 
-- **AuthContext**: 로그인 상태 관리
-- **LoginPage**: 로그인 인터페이스
-- **Dashboard**: 메인 대시보드
-- **StudyPage**: 학습 카테고리 페이지
-- **PushButton**: 3D 효과 버튼 컴포넌트
+- 원본 Turn Trader 사이트의 뛰어난 UI/UX 디자인
+- shadcn/ui의 훌륭한 컴포넌트 라이브러리
+- Next.js와 Tailwind CSS 팀
 
-## 스크린샷
+---
 
-프로젝트의 실제 동작 모습을 확인하려면 로그인 후 Study 페이지를 방문해보세요.
-
-## 배포
-
-이 프로젝트는 Netlify에서 정적 사이트로 배포할 수 있도록 설정되어 있습니다.
-
-## 라이센스
-
-MIT License
-
-## 기여
-
-이슈 리포트나 풀 리퀘스트는 언제든 환영합니다.
+**Made with ❤️ by [Your Name]**
