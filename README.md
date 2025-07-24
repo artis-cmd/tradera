@@ -1,8 +1,8 @@
-# Turn Trader Clone
+# Trader A Project
 
-Turn Trader의 Study 페이지를 완벽하게 클론한 Next.js 프로젝트입니다.
+Trader A의 Study 페이지를 완벽하게 클론한 Next.js 프로젝트입니다.
 
-![Turn Trader Screenshot](https://via.placeholder.com/800x400/1c4b8b/ffffff?text=Turn+Trader+Study+Page)
+![Trader A Screenshot](https://via.placeholder.com/800x400/1c4b8b/ffffff?text=Turn+Trader+Study+Page)
 
 ## ✨ 주요 기능
 
@@ -26,8 +26,8 @@ Turn Trader의 Study 페이지를 완벽하게 클론한 Next.js 프로젝트입
 
 ### 1. 저장소 클론
 ```bash
-git clone https://github.com/artis-cmd/turn-trader-clone.git
-cd turn-trader-clone
+git clone https://github.com/artis-cmd/tradera.git
+cd tradera
 ```
 
 ### 2. 의존성 설치
@@ -126,7 +126,7 @@ bun run build
 
 ## 🙏 감사의 말
 
-- 원본 Turn Trader 사이트의 뛰어난 UI/UX 디자인
+- 원본 Trader A 사이트의 뛰어난 UI/UX 디자인
 - shadcn/ui의 훌륭한 컴포넌트 라이브러리
 - Next.js와 Tailwind CSS 팀
 
