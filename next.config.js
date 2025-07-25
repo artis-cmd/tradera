@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   output: 'export',
   distDir: 'out',
-  basePath: '/tradera',
-  assetPrefix: '/tradera/',
+  basePath: isProd ? '/tradera' : '',
+  assetPrefix: isProd ? '/tradera/' : '',
   allowedDevOrigins: ["*.preview.same-app.com"],
   images: {
     unoptimized: true,
